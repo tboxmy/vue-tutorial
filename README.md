@@ -9,6 +9,9 @@ npm install --save @popperjs/core bootstrap
 npm install
 ```
 
+- [Navbar for Bootstrap 5](https://getbootstrap.com/docs/5.0/components/navbar/)
+- [Migrating to Bootstrap 5](https://getbootstrap.com/docs/5.1/migration/#forms)
+
 ### Compiles and hot-reloads for development
 
 ```

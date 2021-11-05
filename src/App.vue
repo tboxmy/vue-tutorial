@@ -1,8 +1,6 @@
 <template>
-<div id="app" class="container">  
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to My Vue.js App"/> -->
-  <NavbarPage />
+<div id="app" class="container-fluid">  
+  <NavbarRow />
   <Products :msg="message" :products="products"/>
   <input type="text" v-model="message"  />
   <button @click="alertMessage" class="btn btn-secondary">Ok</button>
@@ -12,13 +10,13 @@
 </template>
 
 <script>
-import NavbarPage from './components/Navigation.vue'
+import NavbarRow from './components/Navigation.vue'
 import Products from './components/Products.vue'
 
 export default {
   name: 'App',
   components: {
-     Products, NavbarPage,
+     Products, NavbarRow,
   },
   data(){
     return {
