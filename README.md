@@ -5,6 +5,7 @@ This is the code for the basic tutorial found at [Tboxmy blog](https://tboxmy.bl
 ## Project setup
 
 ```
+npm install --save @popperjs/core bootstrap
 npm install
 ```
 
