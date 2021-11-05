@@ -1,4 +1,4 @@
-# helloworld template
+# Vue Programming Tutorial part 1
 
 This is the code for the basic tutorial found at [Tboxmy blog](https://tboxmy.blogspot.com/2021/11/building-vue-single-page-application.html)
 
