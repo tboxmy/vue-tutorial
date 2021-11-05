@@ -1,18 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <!-- <HelloWorld msg="Welcome to My Vue.js App"/> -->
-  <HelloWorld :msg="message"/>
+  <Products :msg="message"/>
   <input type="text" v-model="message" />
   <button @click="alertMessage">Ok</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Products from './components/Products.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Products
   },
   data(){
     return {
