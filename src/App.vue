@@ -1,9 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+<div id="app" class="small-container">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to My Vue.js App"/> -->
-  <Products :msg="message"/>
+  <Products :msg="message" :products="products"/>
   <input type="text" v-model="message" />
   <button @click="alertMessage">Ok</button>
+
+</div>
 </template>
 
 <script>
@@ -16,7 +19,18 @@ export default {
   },
   data(){
     return {
-      message: 'Hello World!'
+      message: 'My Products',
+      products: [
+        {
+          id: 1,
+          name: "Leather shield",
+          description: "Tough leather",
+          cost: 120 },
+        { id:2,
+          name: "Heavy Leather shield",
+          description: "Double leather layers",
+          cost: 150 },
+        ],
     }
   },
   methods: {
