@@ -4,11 +4,7 @@
 
       <div class="card card-container">        
         <Form >
-          <img
-        id="profile-img"
-        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-        class="profile-img-card"
-      />
+          
           <div class="form-group">
             <label for="title">Username</label>
             <input type="text"
@@ -24,7 +20,7 @@
             />
           </div>
           
-          <button  class="btn btn-success">Login</button>
+          <button @click="login" class="btn btn-success">Login</button>
           
           <div class="form-group">
             <div v-if="message" class="alert alert-danger" role="alert">
@@ -40,6 +36,12 @@
 <script>
 
 export default {  
-  name: 'Login'}
+  name: 'Login',
+  methods:{
+    async login(){
+      alert("login process")
+    }
+  }
+  }
 
 </script>
