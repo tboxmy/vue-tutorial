@@ -1,44 +1,23 @@
 <template>
-<div id="app" class="container-fluid">  
-  <NavbarRow />
-  <Products :msg="message" :products="products"/>
-  <input type="text" v-model="message"  />
-  <button @click="alertMessage" class="btn btn-secondary">Ok</button>
+  <div id="app">
+    <NavbarRow />
 
-
-</div>
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div>
 </template>
+
 
 <script>
 import NavbarRow from './components/Navigation.vue'
-import Products from './components/Products.vue'
-
 export default {
   name: 'App',
   components: {
-     Products, NavbarRow,
+    NavbarRow,
+
   },
-  data(){
-    return {
-      message: 'My Products',
-      products: [
-        {
-          id: 1,
-          name: "Leather shield",
-          description: "Tough leather",
-          cost: 120 },
-        { id:2,
-          name: "Heavy Leather shield",
-          description: "Double leather layers",
-          cost: 150 },
-        ],
-    }
-  },
-  methods: {
-    alertMessage(){
-      alert(this.message)
-    }
-  }
+  
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-      <h1>| {{ msg }} |</h1>
+      <h1>| {{ $route.params.message }} |</h1>
       <table border=1>
       <thead>
         <tr>
@@ -27,10 +27,21 @@
 </template>
 <script>
 export default {
-  name: 'Products',
+  
   props: {
-    msg: String,
+    message: String,
     products: Array,
+  },
+  data(){
+    return {
+      message2: 'My Products',
+      
+    }
+  },
+  methods: {
+    alertMessage(){
+      alert(this.message)
+    }
   }
 }
 </script>
