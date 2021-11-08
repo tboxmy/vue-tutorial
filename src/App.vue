@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <NavbarRow />
-
+    <NavbarRow />      
     <div class="container mt-3">
-      <router-view />
-    </div>
+      <div class="row">
+        <router-view />
+      </div>
+    </div>  
   </div>
+  
 </template>
 
 

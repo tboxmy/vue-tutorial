@@ -1,29 +1,25 @@
 <template>
-<div class="col-md-3"></div>
-    <div class="col-md-6">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+
       <div class="card card-container">        
-        <Form @submit="handleLogin" :validation-schema="schema">
+        <Form >
           <div class="form-group">
-            <label for="username">Username</label>
-            <Field name="username" type="text" class="form-control" />
-            <ErrorMessage name="username" class="error-feedback" />
+            <label for="title">Username</label>
+            <input type="text"
+              class="form-control"
+              id="email" name="email"   
+            />
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
-            <Field name="password" type="password" class="form-control" />
-            <ErrorMessage name="password" class="error-feedback" />
+            <label for="title">Password</label>
+            <input type="password"
+              class="form-control"
+              id="password" name="password"   
+            />
           </div>
-
-          <div class="form-group">
-            <button class="btn btn-primary btn-block" :disabled="loading">
-              <span
-                v-show="loading"
-                class="spinner-border spinner-border-sm"
-              ></span>
-              <span>Login</span>
-            </button>
-          </div>
-
+          <button  class="btn btn-success">Login</button>
+          
           <div class="form-group">
             <div v-if="message" class="alert alert-danger" role="alert">
               {{ message }}
@@ -31,13 +27,13 @@
           </div>
         </Form>
       </div>
-    </div>
-<div class="col-md-3"></div>    
+   <div class="col-md-3"></div>
+  </div>
 </template>
 
 <script>
 
-export default {
+export default {  
   name: 'Login'}
 
 </script>

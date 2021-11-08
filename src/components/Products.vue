@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-      <h1>| {{ msg }} |</h1>
+      <h1>{{ msg }}</h1>
       <table border=1>
       <thead>
         <tr>
@@ -28,9 +28,21 @@
 <script>
 export default {
   name: 'Products',
-  props: {
-    msg: String,
-    products: Array,
+  data(){
+    return {
+      msg: "My products",
+      products: [
+        {
+          id: 1,
+          name: "Leather shield",
+          description: "Tough leather",
+          cost: 120 },
+        { id:2,
+          name: "Heavy Leather shield",
+          description: "Double leather layers",
+          cost: 150 },
+      ],
+    };
   }
 }
 </script>
