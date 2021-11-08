@@ -22,7 +22,7 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><router-link to="/login" class="nav-link">Logout</router-link></li>
-            <li><router-link to="/profile" class="nav-link">Profile</router-link></li>
+            <li><router-link to="/profile"  class="nav-link">Profile</router-link></li>
         </ul>
         </li>
       </div>

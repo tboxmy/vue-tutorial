@@ -29,11 +29,18 @@ Part 3:
 - Know how to add route in navigation bar
 - Know how to add fontawesome icons
 
+Part 4:
+
+- Know how to use axios to retrieve API data
+- Know how to display API content as string, image and object
+
 ## Project setup
 
 ```
 npm install --save @popperjs/core bootstrap
 npm install
+
+npm install axios
 
 npm run serve
 ```
