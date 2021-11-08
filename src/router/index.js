@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Products from "@/components/Products.vue";
 import Login from "@/views/auth/Login.vue";
+import Profile from "@/components/Profile.vue";
 
 const routes = [
   {
@@ -8,6 +9,12 @@ const routes = [
     alias: "/products",
     name: "Products",
     component: Products,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    // lazy-loaded
+    component: Profile,
   },
   {
     path: "/login",

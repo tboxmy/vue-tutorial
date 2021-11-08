@@ -4,6 +4,11 @@
 
       <div class="card card-container">        
         <Form >
+          <img
+        id="profile-img"
+        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+        class="profile-img-card"
+      />
           <div class="form-group">
             <label for="title">Username</label>
             <input type="text"
@@ -18,6 +23,7 @@
               id="password" name="password"   
             />
           </div>
+          
           <button  class="btn btn-success">Login</button>
           
           <div class="form-group">
