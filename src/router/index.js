@@ -13,7 +13,6 @@ const routes = [
   {
     path: "/profile",
     name: "Profile",
-    // lazy-loaded
     component: Profile,
   },
   {
