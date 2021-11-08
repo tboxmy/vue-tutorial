@@ -23,14 +23,23 @@
         </tr>
         </tbody>
     </table>
+    {{content}} 
+    <img
+      id="profile-img" width=200
+      :src="content.message"    
+    /> {{content.status}} 
+
+<div></div>
   </div>
 </template>
 <script>
+import ProductService from "../services/products";
 export default {
   name: 'Products',
   data(){
     return {
       msg: "My products",
+      content: "",
       products: [
         {
           id: 1,
@@ -43,7 +52,22 @@ export default {
           cost: 150 },
       ],
     };
-  }
+  },
+  mounted() {
+    ProductService.getRandomImage().then(
+      (response) => {
+        this.content = response.data;
+      },
+      (error) => {
+        this.content =
+          (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+          error.message ||
+          error.toString();
+      }
+    );
+  },
 }
 </script>
 <style scoped>
