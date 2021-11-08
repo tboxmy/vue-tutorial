@@ -37,36 +37,20 @@ Part 4:
 ## Project setup
 
 ```
-npm install --save @popperjs/core bootstrap
+git clone https://github.com/tboxmy/vue-tutorial.git
 npm install
-
-npm install axios
 
 npm run serve
 ```
 
-### Compiles and minifies for production
+# References
 
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# Bootstrap
+## Bootstrap
 
 - [Navbar for Bootstrap 5](https://getbootstrap.com/docs/5.0/components/navbar/)
 - [Migrating to Bootstrap 5](https://getbootstrap.com/docs/5.1/migration/#forms)
 
-# Font Awesome Icons
+## Font Awesome Icons
 
 Name | Free | Paid | Prefix | NPM Package (free) | NPM package (paid)
 Solid | Yes | Yes | fas | @fortawesome/free-solid-svg-icons | @fortawesome/pro-solid-svg-icons
